@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeliDeli</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="inicio.css">
+
+
+</head>
+<body style="background-color: rgb(53, 46, 51);">
+    <!-- SECCION INICIO -->
+    <section id="inicio">
+        <header>
+            <div class="contenido-header">
+                <div class="logo">
+                    <h1>🍔🍳🥑</h1>
+                </div>
+                <nav id="nav">
+                    <ul>
+                        <li>
+                            <a href="#inicio" onclick="seleccionar()">
+                                <i class="fa-solid fa-house"></i>
+                                <span>Inicio</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#sabores" onclick="seleccionar()">
+                                <i class="fa-solid fa-ice-cream"></i>
+                                <span>Sabores</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#platos" onclick="seleccionar()">
+                                <i class="fa-solid fa-utensils"></i>
+                                <span>Platos</span>
+                            </a></li>
+                        <li>
+                            <a href="#blog" onclick="seleccionar()">
+                                <i class="fa-solid fa-pen"></i>
+                                <span>Blog</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contacto" onclick="seleccionar()">
+                                <i class="fa-solid fa-comments"></i>
+                                <span>Contacto</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="social">
+                    <a href="tel:+1123-456-7890">
+                        <i class="fa-solid fa-phone"></i>+1141-410-283
+                    </a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a> 
+                </div>
+                <div class="nav-responsive" id="bar" onclick="mostrarOcultarMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </header>
+        <!-- Carrusel -->
+        <div class="carrusel">
+            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround":true, "pageDots": false, "autoPlay": true}'>
+                <div class="gallery-cell" >
+                    <img src="assets/restaurant.jpg" alt="">
+                </div>
+                <div class="gallery-cell">
+                    <img src="assets/2.jpeg" alt="">
+                </div>
+                <div class="gallery-cell">
+                    <img src="assets/3.jpeg" alt="">
+                </div>
+                <div class="gallery-cell">
+                    <img src="assets/4.jpeg" alt="">
+                </div>
+            </div>
+            <div class="info">
+                <h2>Delicias Argentinas</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                <button>Leer Más</button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- SECCION SABORES -->
+    <section id="sabores">
+        <h2>Sabores</h2>
+        <div class="fila">
+            <div class="item">
+                <div class="icono">
+                    <img src="assets/sabor1.png" alt="">
+                </div>
+                <div class="info">
+                    <h3>Ensaladas</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icono">
+                    <img src="assets/sabor2.png" alt="">
+                </div>
+                <div class="info">
+                    <h3>Tortas</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icono">
+                    <img src="assets/sabor3.png" alt="">
+                </div>
+                <div class="info">
+                    <h3>Hamburguesas</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="fila">
+            <div class="item">
+                <div class="icono">
+                    <img src="assets/sabor4.png" alt="">
+                </div>
+                <div class="info">
+                    <h3>Helados</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icono">
+                    <img src="assets/sabor5.png" alt="">
+                </div>
+                <div class="info">
+                    <h3>Pastas</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icono">
+                    <img src="assets/sabor6.png" alt="">
+                </div>
+                <div class="info">
+                    <h3>Galletitas</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+
+        <button>Ver Más</button>
+
+    </section>
+
+    <!-- SECCION PLATOS -->
+    <section id="platos">
+        <h2>Menu</h2>
+
+        <div class="fila">
+            <div class="item">
+                <img src="assets/plato1.jpeg" alt="">
+                <p>Chiles Y Alitas De Pollo Frito </p>
+            </div>
+            <div class="item">
+                <img src="assets/plato2.jpeg" alt="">
+                <p>Ensalada De Pescado</p>
+            </div>
+            <div class="item">
+                <img src="assets/plato3.jpeg" alt="">
+                <p>Carne Asada Servido En Plato Blanco</p>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="item">
+                <img src="assets/plato4.jpeg" alt="">
+                <p>Bife con Papas Fritas</p>
+            </div>
+            <div class="item">
+                <img src="assets/plato5.jpeg" alt="">
+                <p>Pizza con Rúcula</p>
+            </div>
+            <div class="item">
+                <img src="assets/plato6.jpeg" alt="">
+                <p>Pasta con Tuco</p>
+            </div>
+        </div>
+
+        <button>Ver Más</button>
+
+    </section>
+
+    <!-- SECCION BLOG -->
+    <section id="blog">
+        <h2>Blog</h2>
+        <div class="galeria-blog js-flickity" data-flickity-options='{ "wrapAround":true, "pageDots": true}'>
+            <div class="gallery-cell" >
+                <div class="item">
+                    <div class="foto">
+                        <img src="assets/cheff1.jpeg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>El arte de cocinar</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, repudiandae est maxime quam alias asperiores.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-cell" >
+                <div class="item">
+                    <div class="foto">
+                        <img src="assets/cheff2.jpeg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>¿Donde estudiar cocina?</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, repudiandae est maxime quam alias asperiores culpa minus corporis neque hic sunt dolore.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-cell" >
+                <div class="item">
+                    <div class="foto">
+                        <img src="assets/cheff3.jpeg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>La cocina del 2023</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, repudiandae est maxime quam alias asperiores culpa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button>Leer Más</button>
+    </section>
+
+    <!-- SECCION CONTACTO Y PIE DE PAGINA -->
+    <section id="contacto">
+        <div class="fila">
+            <div class="col">
+                <h1>🍔🍳🥑</h1>
+            </div>
+            <div class="col">
+                <h3>Menú</h3>
+                <a href="#inicio">Inicio</a>
+                <a href="#sabores">Sabores</a>
+                <a href="#sabores">Platos</a>
+                <a href="#sabores">Blog</a>
+            </div>
+            <div class="col">
+                <h3>Cheffs</h3>
+                <a href="#">Luciano G.</a>
+                <a href="#">Mirta L.</a>
+                <a href="#">Flor J.</a>
+            </div>
+            <div class="col">
+                <h3>Social Media</h3>
+                <div class="media">
+                    <i class="fa-brands fa-twitter"></i> <a href="#">Twitter</a>
+                </div>
+                <div class="media">
+                    <i class="fa-brands fa-instagram"></i> <a href="#">Instagram</a>
+                </div>
+            </div>
+            <div class="col">
+                <h3>Contacto</h3>
+                <input type="text" placeholder="Tu correo">
+                <input type="submit" class="enviar">
+            </div>
+        </div>
+
+    </section>
+    
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
